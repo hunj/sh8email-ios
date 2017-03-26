@@ -70,6 +70,7 @@ class Sh8mailDetailViewController: UIViewController {
 			print(email.description)
 			DispatchQueue.main.async {
 				self.setFields(using: email)
+				self.contentView.resizeWebContent()
 			}
 		}
 	}
@@ -86,6 +87,8 @@ class Sh8mailDetailViewController: UIViewController {
 			print(email.description)
 			DispatchQueue.main.async {
 				self.setFields(using: email)
+				self.contentView.resizeWebContent()
+				
 			}
 		}
 	}
@@ -102,14 +105,30 @@ class Sh8mailDetailViewController: UIViewController {
 		contentView.loadHTMLString(mail.contents!, baseURL: nil)
 	}
 	
-    /*
-    // MARK: - Navigation
+	func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+		if navigationType == UIWebViewNavigationType.linkClicked {
+			UIApplication.shared.openURL(request.url!)
+			return false
+		}
+		
+		return true
+	}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+}
 
+/*
+	Contains
+	http://stackoverflow.com/questions/10666484/html-content-fit-in-uiwebview-without-zooming-out
+*/
+
+extension UIWebView {
+	///Method to fit content of webview inside webview according to different screen size
+	func resizeWebContent() {
+		let contentSize = self.scrollView.contentSize
+		let viewSize = self.bounds.size
+		let zoomScale = viewSize.width/contentSize.width
+		self.scrollView.minimumZoomScale = zoomScale
+		self.scrollView.maximumZoomScale = zoomScale
+		self.scrollView.zoomScale = zoomScale
+	}
 }
