@@ -11,6 +11,7 @@
 		3530BFE81E5570060031816F /* sh8helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530BFE71E5570060031816F /* sh8helper.swift */; };
 		3530BFEA1E557A480031816F /* sh8error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530BFE91E557A480031816F /* sh8error.swift */; };
 		357D91931E32321500BC206B /* Sh8mailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D91921E32321500BC206B /* Sh8mailTableViewController.swift */; };
+		35AC361B1EA9238800285F5E /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC361A1EA9238800285F5E /* Address.swift */; };
 		35D5A5121E1F367B002CE4BD /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5A5111E1F367A002CE4BD /* InstructionsViewController.swift */; };
 		35F6A54E1E337625006B7420 /* sh8mailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6A54D1E337625006B7420 /* sh8mailTableViewCell.swift */; };
 		35F828471E1E328B0098D3C7 /* InstructionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F828461E1E328B0098D3C7 /* InstructionsPageViewController.swift */; };
@@ -51,13 +52,14 @@
 		3530BFE71E5570060031816F /* sh8helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sh8helper.swift; sourceTree = "<group>"; };
 		3530BFE91E557A480031816F /* sh8error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sh8error.swift; sourceTree = "<group>"; };
 		357D91921E32321500BC206B /* Sh8mailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sh8mailTableViewController.swift; sourceTree = "<group>"; };
+		35AC361A1EA9238800285F5E /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Model/Address.swift; sourceTree = "<group>"; };
 		35D5A5111E1F367A002CE4BD /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
-		35F6A54D1E337625006B7420 /* sh8mailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sh8mailTableViewCell.swift; sourceTree = "<group>"; };
+		35F6A54D1E337625006B7420 /* sh8mailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sh8mailTableViewCell.swift; path = Common/Cells/sh8mailTableViewCell.swift; sourceTree = "<group>"; };
 		35F828461E1E328B0098D3C7 /* InstructionsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsPageViewController.swift; sourceTree = "<group>"; };
 		35F828481E1E3F8D0098D3C7 /* InstructionsImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InstructionsImages.xcassets; sourceTree = "<group>"; };
 		62174E651D90320100EE5DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		62300D791D99676F00725805 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		623447E41D979EEC0000A086 /* Mail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		62300D791D99676F00725805 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = Common/Custom/CustomTextField.swift; sourceTree = "<group>"; };
+		623447E41D979EEC0000A086 /* Mail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mail.swift; path = "/Users/hunj/dev/sh8email-ios/sh8email/Model/Mail.swift"; sourceTree = "<absolute>"; };
 		626FD9411D8AC1F100E6F41E /* sh8email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sh8email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		626FD9441D8AC1F100E6F41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		626FD9461D8AC1F100E6F41E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,8 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				623447E41D979EEC0000A086 /* Mail.swift */,
+				35AC361A1EA9238800285F5E /* Address.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6EB8C1261E39700100C863C8 /* Controller */ = {
@@ -172,7 +175,7 @@
 				35F828461E1E328B0098D3C7 /* InstructionsPageViewController.swift */,
 				35D5A5111E1F367A002CE4BD /* InstructionsViewController.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		6EB8C1271E39700900C863C8 /* Supporting Files */ = {
@@ -182,7 +185,7 @@
 				3530BFE91E557A480031816F /* sh8error.swift */,
 				626FD9501D8AC1F100E6F41E /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6EB8C1281E39703000C863C8 /* Common */ = {
@@ -192,14 +195,14 @@
 				6EB8C12A1E39704200C863C8 /* Cells */,
 				6EB8C12B1E39704600C863C8 /* Custom */,
 			);
-			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		6EB8C1291E39703800C863C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6EB8C12A1E39704200C863C8 /* Cells */ = {
@@ -207,7 +210,7 @@
 			children = (
 				35F6A54D1E337625006B7420 /* sh8mailTableViewCell.swift */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6EB8C12B1E39704600C863C8 /* Custom */ = {
@@ -215,7 +218,7 @@
 			children = (
 				62300D791D99676F00725805 /* CustomTextField.swift */,
 			);
-			name = Custom;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		B73CD107BEE21FCA40015C03 /* Frameworks */ = {
@@ -428,6 +431,7 @@
 				35282D391E63F9A200C628C4 /* Sh8mailDetailViewController.swift in Sources */,
 				62300D7A1D99676F00725805 /* CustomTextField.swift in Sources */,
 				357D91931E32321500BC206B /* Sh8mailTableViewController.swift in Sources */,
+				35AC361B1EA9238800285F5E /* Address.swift in Sources */,
 				623447E51D979EEC0000A086 /* Mail.swift in Sources */,
 				626FD9471D8AC1F100E6F41E /* ViewController.swift in Sources */,
 				35F6A54E1E337625006B7420 /* sh8mailTableViewCell.swift in Sources */,

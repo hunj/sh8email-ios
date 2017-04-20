@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "- 온라인 쇼핑몰에서 물건을 구입할 때 \n- 이벤트에 응모할 때 \n- 회원가입할 때 \n- 회원/로그인 기능 개발 시 테스트할 때"; ObjectID = "38u-8G-pju"; */
+"38u-8G-pju.text" = "- 온라인 쇼핑몰에서 물건을 구입할 때 \n- 이벤트에 응모할 때 \n- 회원가입할 때 \n- 회원/로그인 기능 개발 시 테스트할 때";
+
+/* Class = "UILabel"; text = "남 몰래 받고 싶을 땐!"; ObjectID = "7P7-q3-QOr"; */
+"7P7-q3-QOr.text" = "남 몰래 받고 싶을 땐!";
+
+/* Class = "UIButton"; normalTitle = "이게 뭐고, 어떻게 쓰는거죠?"; ObjectID = "7no-o7-2tf"; */
+"7no-o7-2tf.normalTitle" = "이게 뭐고, 어떻게 쓰는거죠?";
+
+/* Class = "UILabel"; text = "contents\ncontents\ncontents\ncontents"; ObjectID = "9Au-q4-KKA"; */
+"9Au-q4-KKA.text" = "contents\ncontents\ncontents\ncontents";
+
+/* Class = "UIViewController"; title = "sh8.email"; ObjectID = "9XP-Hk-AxK"; */
+"9XP-Hk-AxK.title" = "sh8.email";
+
+/* Class = "UILabel"; text = "\"쉿메일\"로 전달된 메일은 읽지 않아도\n24시간 후 자동으로 지워지며,\n읽은 후에는 불편하지 않도록 똑똑하게\n알아서 지워줍니다."; ObjectID = "9fY-qq-sL2"; */
+"9fY-qq-sL2.text" = "\"쉿메일\"로 전달된 메일은 읽지 않아도\n24시간 후 자동으로 지워지며,\n읽은 후에는 불편하지 않도록 똑똑하게\n알아서 지워줍니다.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "GlZ-7V-geO"; */
+"GlZ-7V-geO.title" = "Back";
+
+/* Class = "UILabel"; text = "subject"; ObjectID = "ILy-NJ-7t5"; */
+"ILy-NJ-7t5.text" = "subject";
+
+/* Class = "UILabel"; text = "recipDate"; ObjectID = "J2b-z8-8jW"; */
+"J2b-z8-8jW.text" = "recipDate";
+
+/* Class = "UIViewController"; title = "Instructions Page 2"; ObjectID = "Jjx-eK-LIw"; */
+"Jjx-eK-LIw.title" = "Instructions Page 2";
+
+/* Class = "UILabel"; text = "@sh8.email"; ObjectID = "LzW-9i-1tN"; */
+"LzW-9i-1tN.text" = "@sh8.email";
+
+/* Class = "UIButton"; normalTitle = "메일 확인"; ObjectID = "NPH-cn-zAS"; */
+"NPH-cn-zAS.normalTitle" = "메일 확인";
+
+/* Class = "UINavigationItem"; title = "sh8.email"; ObjectID = "Ovq-ui-Iki"; */
+"Ovq-ui-Iki.title" = "sh8.email";
+
+/* Class = "UILabel"; text = "메일을 받긴 해야 하는데,\n내 메일함이 더러워지는 것도 싫고, \n메일 계정 하나 더 만들기도 귀찮죠?\nsh8.email은 가입없이 아무 계정으로 \n바로 메일을 받아볼 수 있습니다.\n"; ObjectID = "QUe-T9-gW4"; */
+"QUe-T9-gW4.text" = "메일을 받긴 해야 하는데,\n내 메일함이 더러워지는 것도 싫고, \n메일 계정 하나 더 만들기도 귀찮죠?\nsh8.email은 가입없이 아무 계정으로 \n바로 메일을 받아볼 수 있습니다.\n";
+
+/* Class = "UILabel"; text = "\"쉿메일\"로 메일에 \n비밀번호를 걸어보세요."; ObjectID = "QXb-bs-O1e"; */
+"QXb-bs-O1e.text" = "\"쉿메일\"로 메일에 \n비밀번호를 걸어보세요.";
+
+/* Class = "UILabel"; text = "세상에서 가장 조용한 이메일"; ObjectID = "Qai-VL-Dm1"; */
+"Qai-VL-Dm1.text" = "세상에서 가장 조용한 이메일";
+
+/* Class = "UILabel"; text = "sh8.email"; ObjectID = "WOO-IG-L31"; */
+"WOO-IG-L31.text" = "sh8.email";
+
+/* Class = "UILabel"; text = "가입없이 바로 받자!"; ObjectID = "gEm-mS-pQP"; */
+"gEm-mS-pQP.text" = "가입없이 바로 받자!";
+
+/* Class = "UIViewController"; title = "Instructions Page 1"; ObjectID = "isZ-Nu-D6j"; */
+"isZ-Nu-D6j.title" = "Instructions Page 1";
+
+/* Class = "UILabel"; text = "sender"; ObjectID = "oMn-ol-7aQ"; */
+"oMn-ol-7aQ.text" = "sender";
+
+/* Class = "UIViewController"; title = "Instructions Page 3"; ObjectID = "oli-EF-dbn"; */
+"oli-EF-dbn.title" = "Instructions Page 3";
+
+/* Class = "UITextField"; placeholder = "이메일"; ObjectID = "rU5-F4-Rim"; */
+"rU5-F4-Rim.placeholder" = "이메일";
+
+/* Class = "UIButton"; normalTitle = "sh8.email 사용하기"; ObjectID = "re2-T1-uPJ"; */
+"re2-T1-uPJ.normalTitle" = "sh8.email 사용하기";
+
+/* Class = "UITableViewController"; title = "sh8.email"; ObjectID = "tFH-Mj-2xi"; */
+"tFH-Mj-2xi.title" = "sh8.email";
+
+/* Class = "UILabel"; text = "세상에서 가장 조용한 이메일"; ObjectID = "vnf-pE-H0X"; */
+"vnf-pE-H0X.text" = "세상에서 가장 조용한 이메일";
+
+/* Class = "UILabel"; text = "가입없이 편하게 받고는 싶고,\n남에게 보여주기는 싫고.."; ObjectID = "xUI-kw-C1f"; */
+"xUI-kw-C1f.text" = "가입없이 편하게 받고는 싶고,\n남에게 보여주기는 싫고..";
