@@ -88,17 +88,17 @@ extension Sh8mailTableViewController {
         
         let mail = emails[indexPath.row]
         
-        cell.senderLabel.text = mail.sender
-        cell.recipDateLabel.text = Sh8helper.convertDate(mail.recipDate!)
+		cell.senderLabel.text = String(describing: mail.from)
+        cell.recipDateLabel.text = mail.date?.description
         cell.subjectLabel.text = mail.subject
-        cell.contentsLabel.text = Sh8helper.convertHtml(mail.contents!)
+        cell.contentsLabel.text = Sh8helper.convertHtml(mail.textAsHtml!)
         
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected row: \(indexPath.row),  sender: \(self.emails[indexPath.row].sender)")
+        print("Selected row: \(indexPath.row),  sender: \(self.emails[indexPath.row].from)")
     }
 	
      // MARK: - Navigation

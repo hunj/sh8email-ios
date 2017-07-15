@@ -23,13 +23,13 @@ class InstructionsPageViewController: UIPageViewController {
 		}
 	}
 	
-	private(set) lazy var orderedViewControllers: [UIViewController] = {
+	fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
 		return [self.newInstructionsViewController("1"),
 		        self.newInstructionsViewController("2"),
 		        self.newInstructionsViewController("3")]
 	}()
 	
-	private func newInstructionsViewController(_ instruction_index: String) -> UIViewController {
+	fileprivate func newInstructionsViewController(_ instruction_index: String) -> UIViewController {
 		return UIStoryboard(name: "Main", bundle: nil) .
 			instantiateViewController(withIdentifier: "Instructions\(instruction_index)")
 	}

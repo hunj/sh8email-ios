@@ -41,26 +41,39 @@ class Mail: Mappable {
 	var date: Date?
 	var messageId: String?
 	var inReplyTo: String?
-	var reply-to: Address?
-	
+	var replyTo: Address?
+	var references: Any?
+	var html: String?
+	var text: String?
+	var textAsHtml: String?
+	var attachments: [Any]?
+	var isSecret: Bool?
 	
 	var description: String {
-		return "\(self.sender) (\(self.recipDate))\n\(self.subject)\n\(self.contents)"
+		return "\(String(describing: self.from)) (\(String(describing: self.date)))\n\(String(describing: self.subject))\n\(String(describing: self.text))"
 	}
 	
     required init?(map: Map) {
     
     }
-    
+	
     func mapping(map: Map) {
-        pk          <- map["pk"]
-        recipient   <- map["recipient"]
-        sender      <- map["sender"]
-        subject     <- map["subject"]
-        contents    <- map["contents"]
-        recipDate   <- map["recipDate"]
-        isSecret    <- map["isSecret"]
-        isRead      <- map["isRead"]
+		headers     <- map["headers"]
+		subject     <- map["subject"]
+		from		<- map["from"]
+		to			<- map["to"]
+		cc			<- map["cc"]
+		bcc			<- map["bcc"]
+		date		<- map["date"]
+		messageId	<- map["messageId"]
+		inReplyTo	<- map["inReplyTo"]
+		replyTo		<- map["replyTo"]
+		references	<- map["references"]
+		html		<- map["html"]
+		text		<- map["text"]
+		textAsHtml	<- map["textAsHtml"]
+		attachments	<- map["attachments"]
+		isSecret	<- map["isSecret"]
     }
 	
 }

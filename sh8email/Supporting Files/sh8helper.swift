@@ -23,7 +23,7 @@ class Sh8helper {
 		guard let date = dateFormatter.date(from: dateStr) else {
 			return dateStr
 		}
-		dateFormatter.locale = NSLocale.current
+		dateFormatter.locale = Locale.current
 		dateFormatter.dateStyle = .short
 		dateFormatter.timeStyle = .short
 		dateFormatter.doesRelativeDateFormatting = true
@@ -58,7 +58,7 @@ class Sh8helper {
 			- width: the `borderWidth` to set
 			- color: the `CGColor` to set this button color as
 	*/
-    static func changeButtonBorder(button: UIButton, radius: CGFloat, width : CGFloat, color: UIColor) {
+    static func changeButtonBorder(_ button: UIButton, radius: CGFloat, width : CGFloat, color: UIColor) {
         button.layer.cornerRadius = radius
         button.layer.borderWidth = width
         button.layer.borderColor = color.cgColor

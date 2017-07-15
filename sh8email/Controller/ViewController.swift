@@ -18,13 +18,13 @@ class ViewController: UIViewController {
 	@IBOutlet var emailField: CustomTextField!
 	@IBOutlet var checkEmailButton: UIButton!
 	@IBOutlet var viewInstructionsButton: UIButton!
-	@IBAction func unwindToMain(segue: UIStoryboardSegue) {}
+	@IBAction func unwindToMain(_ segue: UIStoryboardSegue) {}
 
 	// MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
-        Sh8helper.changeButtonBorder(button: self.checkEmailButton, radius: 3, width : 1, color: UIColor.clear)
-        Sh8helper.changeButtonBorder(button: self.viewInstructionsButton, radius: 3, width : 1, color: UIColor.clear)
+        Sh8helper.changeButtonBorder(self.checkEmailButton, radius: 3, width : 1, color: UIColor.clear)
+        Sh8helper.changeButtonBorder(self.viewInstructionsButton, radius: 3, width : 1, color: UIColor.clear)
 	}
 	
     override func viewDidLayoutSubviews(){
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	@IBAction func unwindToSh8MainView(segue: UIStoryboardSegue) {
+	@IBAction func unwindToSh8MainView(_ segue: UIStoryboardSegue) {
 	
 	}
     

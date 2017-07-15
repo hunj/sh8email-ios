@@ -30,7 +30,7 @@ class Sh8mailDetailViewController: UIViewController {
 		Sets up and sends request for given `Mail` object.
 		- Parameter email: the `Mail` object to send request and set up this UIView's fields.
 	*/
-	private func request(_ email: Mail) {
+	fileprivate func request(_ email: Mail) {
 		if (email.isSecret!) {
 			// show UIAlert for password
 			var inputTextField: UITextField?
@@ -63,8 +63,8 @@ class Sh8mailDetailViewController: UIViewController {
 		- Parameters:
 			- email: the `Mail` object to fetch details of.
 	*/
-	private func requestDataAndSetFields(for email: Mail) {
-		let emailRequestURL = "https://sh8.email/rest/mail/\(email.recipient!)/\(email.pk!)/"
+	fileprivate func requestDataAndSetFields(for email: Mail) {
+		let emailRequestURL = "https://sh8.email/rest/mail/\(email.to!)/\(email.messageId!)/"
 		Alamofire.request(emailRequestURL).responseObject { (response: DataResponse<Mail>) in
 			guard let email = response.result.value else {
 				print("< ERR! > Did not receive data!")
@@ -84,8 +84,8 @@ class Sh8mailDetailViewController: UIViewController {
 			- email: the `Mail` object to fetch details of.
 			- secretCode: the `String` to unlock this email with.
 	*/
-	private func requestDataAndSetFields(for email: Mail, using secretCode: String) {
-		let emailRequestURL = "https://sh8.email/rest/mail/\(email.recipient!)/\(email.pk!)/"
+	fileprivate func requestDataAndSetFields(for email: Mail, using secretCode: String) {
+		let emailRequestURL = "https://sh8.email/rest/mail/\(email.to!)/\(email.messageId!)/"
 		let parameters = ["secret_code" : secretCode]
 		Alamofire.request(emailRequestURL, method: .post, parameters: parameters).responseObject { (response: DataResponse<Mail>) in
 			guard let email = response.result.value else {
@@ -104,11 +104,11 @@ class Sh8mailDetailViewController: UIViewController {
 		refreshes the UI elements using given `Mail`.
 		- Parameter mail: the `Mail` object to set up the UI fields with
 	*/
-	private func setFields(using mail: Mail) {
+	fileprivate func setFields(using mail: Mail) {
 		subjectLabel.text = mail.subject
-		senderLabel.text = mail.sender
-		recipDateLabel.text = mail.recipDate
-		contentView.loadHTMLString(mail.contents!, baseURL: nil)
+		senderLabel.text = String(describing: mail.from)
+		recipDateLabel.text = String(describing: mail.date)
+		contentView.loadHTMLString(mail.textAsHtml!, baseURL: nil)
 	}
 }
 
