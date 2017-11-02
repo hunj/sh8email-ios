@@ -9,7 +9,6 @@ target 'sh8email' do
   pod 'AlamofireObjectMapper'
   pod 'Kanna'
   pod 'Fabric'
-  pod 'Answers'
   pod 'Crashlytics'
   pod 'Digits'
 end
