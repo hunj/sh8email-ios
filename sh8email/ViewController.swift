@@ -61,10 +61,6 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "showEmailTableView", sender: nil)
 		}
 	}
-	
-	@IBAction func unwindToSh8MainView(segue: UIStoryboardSegue) {
-	
-	}
     
     // MARK: - Prepare
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

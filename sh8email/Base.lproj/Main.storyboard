@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9XP-Hk-AxK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9XP-Hk-AxK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Medium</string>
+            <string>AppleSDGothicNeo-Regular</string>
+            <string>AppleSDGothicNeo-Thin</string>
+        </array>
+        <array key="GillSans.ttc">
+            <string>GillSans-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Instructions Page View Controller-->
         <scene sceneID="Sat-zC-gYz">
@@ -28,11 +41,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입없이 바로 받자!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-mS-pQP">
+                                <rect key="frame" x="20" y="50" width="335" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QUe-T9-gW4">
+                                <rect key="frame" x="20" y="94" width="335" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="EnE-nr-h5P"/>
                                 </constraints>
@@ -50,12 +65,14 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instructions1_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-xL-tyn">
+                                <rect key="frame" x="32.5" y="316" width="310" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Djp-Co-A0g"/>
                                     <constraint firstAttribute="width" constant="310" id="Dv4-M0-zLx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38u-8G-pju">
+                                <rect key="frame" x="40" y="193" width="295" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="N3P-KR-UJy"/>
                                 </constraints>
@@ -116,11 +133,13 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남 몰래 받고 싶을 땐!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="7P7-q3-QOr">
+                                <rect key="frame" x="20" y="50" width="335" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xUI-kw-C1f">
+                                <rect key="frame" x="20" y="129" width="335" height="34.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">가입없이 편하게 받고는 싶고,
@@ -135,12 +154,14 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instructions1_image" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-Us-HFA">
+                                <rect key="frame" x="32.5" y="316" width="310" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="310" id="Djf-iq-m4G"/>
                                     <constraint firstAttribute="height" constant="400" id="qSe-0v-GLP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-bs-O1e">
+                                <rect key="frame" x="20" y="216.5" width="335" height="34.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">"쉿메일"로 메일에 
@@ -188,6 +209,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instructions1_image" translatesAutoresizingMaskIntoConstraints="NO" id="XhL-fQ-g95">
+                                <rect key="frame" x="32.5" y="316" width="310" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="IKS-yS-rz4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="WGB-Sx-9Hd"/>
@@ -195,11 +217,13 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세상에서 가장 조용한 이메일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-pE-H0X">
+                                <rect key="frame" x="20" y="50" width="335" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-qq-sL2">
+                                <rect key="frame" x="20" y="129" width="335" height="34.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="&quot;쉿메일&quot;로 전달된 메일은 읽지 않아도 24시간 후 자동으로 지워지며, 읽은 후에는 불편하지 않도록 똑똑하게 알아서 지워줍니다.">
                                         <attributes>
@@ -212,6 +236,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re2-T1-uPJ">
+                                <rect key="frame" x="20" y="209" width="335" height="42"/>
                                 <color key="backgroundColor" red="0.047058823530000002" green="0.48627450979999998" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="6Mt-Ph-8eB"/>
@@ -262,6 +287,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sh8.email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="36" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-IG-L31">
+                                <rect key="frame" x="20" y="45" width="335" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="pZH-cU-oq1"/>
                                 </constraints>
@@ -270,6 +296,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-VL-Dm1">
+                                <rect key="frame" x="20" y="145" width="335" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="jmh-M1-wHF"/>
                                 </constraints>
@@ -281,6 +308,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rU5-F4-Rim" customClass="CustomTextField" customModule="sh8email" customModuleProvider="target">
+                                <rect key="frame" x="20" y="239" width="239" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="239" id="Io3-C0-Fqx"/>
                                     <constraint firstAttribute="height" constant="30" id="aBK-xa-X4h"/>
@@ -301,6 +329,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@sh8.email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzW-9i-1tN">
+                                <rect key="frame" x="259" y="239" width="96" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="l67-8R-ach"/>
                                 </constraints>
@@ -309,6 +338,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-cn-zAS">
+                                <rect key="frame" x="20" y="308" width="335" height="42"/>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.48627450980392156" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="7bi-Gu-Mrm"/>
@@ -322,6 +352,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7no-o7-2tf">
+                                <rect key="frame" x="20" y="370" width="335" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="O4v-lc-Zlx"/>
@@ -380,13 +411,14 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                         <inset key="separatorInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sh8mailCell" rowHeight="151" id="P8G-wV-mgi" customClass="sh8mailTableViewCell" customModule="sh8email" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="151"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P8G-wV-mgi" id="yVn-t0-Waz">
-                                    <frame key="frameInset" width="375" height="150.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-ol-7aQ">
+                                            <rect key="frame" x="16" y="11" width="258" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="Laf-vS-2kB"/>
                                             </constraints>
@@ -395,6 +427,7 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recipDate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-z8-8jW">
+                                            <rect key="frame" x="279" y="11" width="80" height="19.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="80" id="JbQ-aV-h2R"/>
                                             </constraints>
@@ -403,11 +436,13 @@ sh8.email은 가입없이 아무 계정으로 바로 메일을 받아볼 수 있
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILy-NJ-7t5">
+                                            <rect key="frame" x="16" y="38.5" width="343" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Au-q4-KKA">
+                                            <rect key="frame" x="16" y="67" width="343" height="79.5"/>
                                             <string key="text">contents
 contents
 contents
@@ -447,7 +482,11 @@ contents</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="sh8.email" id="Ovq-ui-Iki">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="r2r-Os-BvP"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="r2r-Os-BvP">
+                            <connections>
+                                <segue destination="PYq-TH-kmC" kind="unwind" unwindAction="unwindToMainWithSegue:" id="54c-mM-Zy7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fsE-Uh-u1t">
                             <connections>
                                 <action selector="refreshButtonTapped:" destination="tFH-Mj-2xi" id="WZe-Gl-JeG"/>
@@ -476,6 +515,7 @@ contents</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdT-qE-UU4">
+                                <rect key="frame" x="16" y="72" width="343" height="57.5"/>
                                 <string key="text" base64-UTF8="YES">
 IAogA
 </string>
@@ -484,14 +524,17 @@ IAogA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvz-mU-fAr">
+                                <rect key="frame" x="16" y="137" width="343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzS-Ta-bU8">
+                                <rect key="frame" x="-4" y="196" width="383" height="471"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-0J-gAK">
+                                <rect key="frame" x="16" y="163" width="343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -533,7 +576,7 @@ IAogA
             <objects>
                 <navigationController id="crY-c0-Guk" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lw9-Qi-cRN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -547,6 +590,5 @@ IAogA
     </scenes>
     <resources>
         <image name="instructions1_image" width="686" height="884"/>
-        <image name="instructions2_image" width="686" height="734"/>
     </resources>
 </document>
