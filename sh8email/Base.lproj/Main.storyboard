@@ -494,7 +494,7 @@ contents</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="PYq-TH-kmC" kind="unwind" identifier="noEmailReturnUnwindSegue" unwindAction="unwindToMainViewWithSegue:" id="vyC-RZ-1fV"/>
+                        <segue destination="PYq-TH-kmC" kind="unwind" identifier="noEmailReturnUnwindSegue" unwindAction="unwindToMainWithSegue:" id="vyC-RZ-1fV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rq-WB-1Vq" userLabel="First Responder" sceneMemberID="firstResponder"/>
